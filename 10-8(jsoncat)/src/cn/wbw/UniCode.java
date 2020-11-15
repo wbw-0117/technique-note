@@ -1,6 +1,7 @@
 package cn.wbw;
 
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * uniCode 编码
@@ -35,6 +36,8 @@ public class UniCode {
         System.out.println(ac == bc);
         System.out.println(ac.equals(bc));
 
+        AtomicInteger a = new AtomicInteger();
+        a.addAndGet('a');
     }
 
      String a = "";
